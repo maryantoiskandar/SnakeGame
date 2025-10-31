@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Ular</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Game Ular</h1>
+
+  <canvas id="gamecanvas" width="1000" height="400"></canvas>
+  
+
+  <div class="info">
+    <p>Skor: <span id="score">0</span></p>
+    <p id="gameover" style="display: none;">Game Over</p>
+    <button onclick="resetgame()"><b>START GAME</b></button>
+    <button onclick="toggleMusic()">Mute/Unmute Music</button>
+  </div>
+
+  <!-- Audio background -->
+  <audio id="bgmusic" src="ssstik.io_1760066666657.mp3" loop></audio>
+
+  <video id="bgvideo" autoplay muted loop playsinline>
+  <source src="70CpIkbEsTPKY.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

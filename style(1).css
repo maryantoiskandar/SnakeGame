@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+  background-image: url(premium_photo-1687919417608-09b4f68aafca.avif);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;    
+}
+
+canvas {
+  border: 2px solid white;
+background-image: url(70CpIkbEsTPKY.mp4);
+  display: block;
+  margin: 20px auto;
+}
+
+button {
+  padding: 10px 16px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.info {
+  margin: 10px;
+}
+
+#gameover {
+  font-size: 24px;
+  font-weight: bold;
+  color: aqua;
+}
+
+
+video#bgvideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Di belakang elemen lain */
+  object-fit: cover;
+}
