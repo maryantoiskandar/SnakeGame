@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Ular</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🐍 Game Ular 🐍</h1>
+  <canvas id="gamecanvas" width="1000" height="400"></canvas>
+  
+  <div class="info">
+    <p>Skor: <span id="score">0</span></p>
+    <button onclick="resetgame()"><b>START GAME</b></button>
+    <button onclick="toggleMusic()">🔊 Mute/Unmute Music</button>
+  </div>
+
+  <!-- Game Over dengan Efek Glitch -->
+  <div id="gameover" style="display: none;">
+    <div class="glitch" data-text="GAME OVER">GAME OVER</div>
+    <button onclick="resetgame()">Main Lagi</button>
+  </div>
+
+  <!-- Audio -->
+  <audio id="bgmusic" src="ssstik.io_1760066666657.mp3" loop preload="auto"></audio>
+  <audio id="eatSound" src="snake-hissing-6092.mp3" preload="auto"></audio>
+  <audio id="gameoverSound" src="game-over-deep-male-voice-clip-352695.mp3" preload="auto"></audio>
+
+  <!-- Background Video -->
+  <video id="bgvideo" autoplay muted loop playsinline>
+    <source src="70CpIkbEsTPKY.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <script src="script.js"></script>
+</body>
+</html>
